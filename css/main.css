@@ -20,7 +20,7 @@ img {
 
 	--white: hsl(0, 0%, 100%);
 	--light-gray: hsl(212, 45%, 89%);
-	--grayish-blue: hsl(220, 15%, 55%);
+	--grayish-blue: hsl(220, 15%, 49%);
 	--dark-blue: hsl(218, 44%, 22%);
 }
 
@@ -44,7 +44,7 @@ body {
 	flex-grow: 1;
 }
 
-h1 {
+h2 {
 	color: var(--dark-blue);
 	font-size: 1.25rem;
 }
@@ -76,11 +76,11 @@ h1 {
 }
 
 /* card text  */
-.card-text {
-	padding: 1.25em 1.1em;
-	display: flex;
-	flex-direction: column;
-	gap: 1em;
+.title {
+	padding: 1em 1em 0.8em;
+}
+.description {
+	padding: 0 1em 1.25em;
 }
 
 /* footer */
