@@ -1,0 +1,97 @@
+/* reset */
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* variables */
+:root {
+	--ff: "Outfit", sans-serif;
+	/* --fs: clamp(1rem, 2.2vh, 1.5rem); */
+
+	--white: hsl(0, 0%, 100%);
+	--light-gray: hsl(212, 45%, 89%);
+	--grayish-blue: hsl(220, 15%, 55%);
+	--dark-blue: hsl(218, 44%, 22%);
+}
+
+/* general styles */
+html {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+body {
+	font-family: var(--ff);
+	color: var(--grayish-blue);
+	letter-spacing: 0.5px;
+	line-height: 1.5;
+
+	background-color: var(--light-gray);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+}
+
+h1 {
+	color: var(--dark-blue);
+	font-size: 1.25rem;
+}
+
+/* utility classes */
+.offscreen {
+	position: absolute;
+	left: -10000px;
+}
+
+/* card */
+.card {
+	width: 320px;
+	padding: 1em;
+
+	background-color: var(--white);
+	border-radius: 15px;
+
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+		0 15px 40px rgba(166, 173, 201, 0.2);
+}
+
+/* qr code */
+.qr-code img {
+	border-radius: 10px;
+}
+
+/* card text  */
+.card-text {
+	padding: 1.25em 1.1em;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+/* footer */
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	color: var(--dark-blue);
+	position: fixed;
+	bottom: 5px;
+	width: 100%;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
